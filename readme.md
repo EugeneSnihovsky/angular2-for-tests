@@ -1,0 +1,1 @@
+# This is an angular2 project for tests based on [5 MIN QUICKSTART](https://angular.io/docs/js/latest/quickstart.html)

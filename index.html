@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular 2 QuickStart</title>
+    <script src="examples/vendor/angular2-polyfills.js"></script>
+    <script src="examples/vendor/system.js"></script>
+    <script src="examples/vendor/typescript.js"></script>
+    <script src="examples/vendor/Rx.js"></script>
+
+    <script src="examples/vendor/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: { emitDecoratorMetadata: true },
+            packages: {'app': {defaultExtension: 'ts'}}
+        });
+        System.import('app/boot')
+                .then(null, console.error.bind(console));
+    </script>
+
+    <base href="/"/>
+</head>
+<body>
+<my-app>Loading...</my-app>
+</body>
+</html>
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
